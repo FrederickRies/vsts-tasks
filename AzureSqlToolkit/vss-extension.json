@@ -1,0 +1,59 @@
+{
+    "manifestVersion": 1,
+    "id": "AzureSqlToolkit",
+    "version": "0.5.4",
+    "name": "Azure SQL toolkit",
+    "publisher": "frederickries",
+    "description": "Some basic features to automate tasks on Azure SQL.",
+	"galleryFlags": [
+		"Preview",
+		"Public"
+    ],
+	"tags": [
+		"Automation",
+		"Deploy task",
+		"Database",
+		"SQL"
+    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "ToolkitIcon.png"
+    },
+	"categories": [
+        "Build and release"
+    ],
+    "scopes": [
+		"vso.build_execute",
+		"vso.release_execute"
+	],
+	"content": {
+		"details": {
+			"path": "README.md"
+		},
+		"license": {
+			"path": "LICENSE"
+		}
+	},
+	"files": [
+        {
+            "path": "Tasks"
+        }
+    ],
+    "contributions": [
+		{
+			"id": "deploy-bacpac-command",
+			"description": "Allows you deploy a bacpac file to an Azure SQL database",
+			"type": "ms.vss-distributed-task.task",
+			"targets": [
+				"ms.vss-distributed-task.tasks"
+			],
+			"properties": {
+				"name": "Tasks/AzureSqlBacpacDeploy"
+			}
+		}
+    ]
+}

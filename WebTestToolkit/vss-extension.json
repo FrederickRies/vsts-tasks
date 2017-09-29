@@ -1,10 +1,10 @@
 {
     "manifestVersion": 1,
-    "id": "AzureSqlToolkit",
-    "version": "0.5.4",
-    "name": "Azure SQL toolkit",
+    "id": "WebTestToolkit",
+    "version": "0.2.5",
+    "name": "Web App test toolkit",
     "publisher": "frederickries",
-    "description": "Some basic features to automate tasks on Azure SQL.",
+    "description": "Few features to test web applications.",
 	"galleryFlags": [
 		"Preview",
 		"Public"
@@ -12,8 +12,8 @@
 	"tags": [
 		"Automation",
 		"Deploy task",
-		"Database",
-		"SQL"
+		"Web",
+		"Test"
     ],
     "targets": [
         {
@@ -45,14 +45,14 @@
     ],
     "contributions": [
 		{
-			"id": "deploy-bacpac-command",
-			"description": "Allows you deploy a bacpac file to an Azure SQL database",
+			"id": "webtesttoolkit-smoketest-command",
+			"description": "Test the response of a public web application.",
 			"type": "ms.vss-distributed-task.task",
 			"targets": [
 				"ms.vss-distributed-task.tasks"
 			],
 			"properties": {
-				"name": "Tasks/AzureSqlBacpacDeploy"
+				"name": "Tasks/SmokeTest"
 			}
 		}
     ]

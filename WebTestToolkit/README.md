@@ -1,6 +1,7 @@
-# Azure SQL Toolkit for Windows
+# Web test for Windows
 
-Some basic features to automate tasks on Azure SQL.
+Some basic features to automate web testing
 
-* **Deploy .bacpac file to a database**
-This task will allow you to restore databases by deploying .bacpac from a Azure Storage Account.
+* **Smoke test**
+Allow you to make a smoke test with a retry policy on a public adress.
+The retry policy allows you to deal with Web application startup times that may be too long to respond directly to a first query.
